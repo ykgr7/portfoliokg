@@ -1,0 +1,392 @@
+*, *::after, *::before {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+@font-face {
+	font-family: "Omniblack";
+	src: url('./font/Omniblack-x4a8.ttf');
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+body {
+  background-color: rgb(0, 0, 0) !important;
+  color: rgb(255, 255, 255) !important;
+  cursor: hidden;
+}
+
+.text-container .titre{
+  font-size: 150px;
+  color: rgba(225,225,225, .01);
+  background-image: url("https://www.itl.cat/pngfile/big/2-24236_rick-and-morty-characters-uhd-4k-wallpaper-rick.jpg");
+  background-repeat : repeat;
+  -webkit-background-clip :text;
+  animation: animate 15s ease-in-out infinite;
+  animation-duration: 50s;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 900;
+}
+
+@keyframes animate {
+  0%, 100% {
+    background-position: left top;
+  }
+  25%{
+    background-position: right bottom;
+   }
+  50% {
+    background-position: left bottom;
+  }
+  75% {
+    background-position: right top;
+  }  
+      
+}
+
+.on-bottom {
+  position: absolute;
+  bottom: 0;
+
+}
+
+.mousey {
+  width: 34px;
+  height: 55px;
+  width: 3px;
+  padding: 10px 15px;
+  height: 35px;
+  border: 2px solid #fff;
+  border-radius: 25px;
+  opacity: 0.75;
+  box-sizing: content-box;
+
+}
+.scroller {
+  width: 3px;
+  height: 10px;
+  border-radius: 25%;
+  background-color: #fff;
+  animation-name: scroll;
+  animation-duration: 2.2s;
+  animation-timing-function: cubic-bezier(0.15, 0.41, 0.69, 0.94);
+  animation-iteration-count: infinite;
+}
+@keyframes scroll {
+  0% {
+    opacity: 0;
+  }
+  10% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(15px);
+    opacity: 0;
+  }
+}
+
+.title2{
+  font-family: 'Omniblack';
+  font-size: 50px;
+}
+
+
+.about-descr{
+  font-family: 'Poppins', sans-serif;
+  font-size: 20px;
+  margin-top: 30px;
+
+}
+
+.container{
+  font-family: 'Omniblack';
+}
+
+:root {
+  --main-color: rgb(45, 184, 208);
+  --second-color: rgb(255, 255, 255);
+  --third-color: #ac85fa;
+  --main-grid: repeat(auto-fill, minmax(300px, 1fr));
+  --main-padding: 40px;
+}
+
+
+.skills {
+  padding-top: var(--main-padding);
+  padding-bottom: var(--main-padding);
+  background-color: var(--bg-color);
+  text-align: center;
+  font-family: 'Omniblack';
+}
+
+.skills .text {
+  padding-bottom: 20px;
+}
+
+.skills h2 {
+  font-size: 35px;
+  color: var(--second-color);
+  padding-bottom: 20px;
+}
+
+
+.skills h2 {
+  font-size: 35px;
+  color: var(--second-color);
+  padding-bottom: 20px;
+}
+
+.skills h2 span {
+  color: var(--main-color);
+}
+
+.skills p {
+  font-size: 18px;
+  color: var(--second-color);
+  font-weight: 400;
+}
+
+.skills .skill-card {
+  min-height: 300px;
+  grid-template-columns: var(--main-grid);
+}
+
+.skills .skill-card .card {
+  padding: 25px;
+  text-align: center;
+  background-color: var(--second-color);
+  border: 2px solid var(--main-color);
+  color: var(--third-color);
+  transition: 1s;
+  position: relative;
+}
+
+ .skills .card h4 {
+  padding-bottom: 10px;
+  font-size: 25px;
+  font-weight: 500;
+}
+ 
+.skills .card p {
+  line-height: 1.7;
+  font-size: 16px;
+  color: var(--third-color);
+}
+
+.skills .card:hover {
+  background-color: transparent;
+}
+
+
+.skills .card:hover h4,
+.skills .card:hover p {
+  color: var(--second-color);
+  transition: 1s;
+}
+
+/* GRID PROJET */
+
+
+@import url(https://fonts.googleapis.com/css?family=Montserrat:200);
+.snip1577 {
+  font-family: 'Omniblack';
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+  margin: 10px;
+  min-width: 1000px;
+  max-width: 1000px;
+  border:var(--main-color);
+  width: 100%;
+  color: #fff;
+  text-align: left;
+  font-size: 16px;
+  background: #000;
+}
+
+.snip1577 *,
+.snip1577:before,
+.snip1577:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+
+.snip1577 img {
+  max-width: 100%;
+  backface-visibility: hidden;
+  vertical-align: top;
+}
+
+.snip1577:before,
+.snip1577:after {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  content: '';
+  background-color: #fff;
+  z-index: 1;
+  opacity: 0;
+}
+
+.snip1577:before {
+  width: 0;
+  height: 1px;
+}
+
+.snip1577:after {
+  height: 0;
+  width: 1px;
+}
+
+.snip1577 figcaption {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  padding: 15px 20px;
+}
+
+.snip1577 h3,
+.snip1577 h4 {
+  margin: 0;
+  font-size: 3.1em;
+  font-weight: normal;
+  opacity: 0;
+}
+
+.snip1577 h4 {
+  font-size: 1.15em;
+  text-transform: uppercase;
+}
+
+.snip1577 a {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+}
+
+.snip1577:hover img,
+.snip1577.hover img {
+  zoom: 1;
+  filter: alpha(opacity=20);
+  -webkit-opacity: 0.2;
+  opacity: 0.2;
+}
+
+.snip1577:hover:before,
+.snip1577.hover:before,
+.snip1577:hover:after,
+.snip1577.hover:after {
+  opacity: 1;
+  -webkit-transition-delay: 0.25s;
+  transition-delay: 0.25s;
+}
+
+.snip1577:hover:before,
+.snip1577.hover:before {
+  width: 100px;
+}
+
+.snip1577:hover:after,
+.snip1577.hover:after {
+  height: 100px;
+}
+
+.snip1577:hover h3,
+.snip1577.hover h3,
+.snip1577:hover h4,
+.snip1577.hover h4 {
+  opacity: 1;
+}
+
+.snip1577:hover h3,
+.snip1577.hover h3 {
+  -webkit-transition-delay: 0.3s;
+  transition-delay: 0.3s;
+}
+
+.snip1577:hover h4,
+.snip1577.hover h4 {
+  -webkit-transition-delay: 0.35s;
+  transition-delay: 0.35s;
+}
+
+.content{
+  margin-top: 30vh;
+}
+
+
+.link{
+  text-decoration: double !important;
+}
+
+.frame {
+  width: 90%;
+  margin: 40px auto;
+  text-align: center;
+}
+button {
+  margin: 20px;
+}
+.custom-btn {
+  width: 130px;
+  height: 40px;
+  color: #fff;
+  border-radius: 5px;
+  padding: 10px 25px;
+  font-family: 'Lato', sans-serif;
+  font-weight: 500;
+  background: transparent;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+   box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+   7px 7px 20px 0px rgba(0,0,0,.1),
+   4px 4px 5px 0px rgba(0,0,0,.1);
+  outline: none;
+}
+
+
+
+.btn-16 {
+  border: none;
+  color: #000;
+}
+.btn-16:after {
+  position: absolute;
+  content: "";
+  width: 0;
+  height: 100%;
+  top: 0;
+  left: 0;
+  direction: rtl;
+  z-index: -1;
+  box-shadow:
+   -7px -7px 20px 0px #fff9,
+   -4px -4px 5px 0px rgba(255, 255, 255, 0.6),
+   7px 7px 20px 0px rgba(255, 255, 255, 0.133),
+   4px 4px 5px 0px rgba(255, 255, 255, 0.067);
+  transition: all 0.3s ease;
+}
+.btn-16:hover {
+  color: #000;
+}
+.btn-16:hover:after {
+  left: auto;
+  right: 0;
+  width: 100%;
+}
+.btn-16:active {
+  top: 2px;
+}
+
+.footer{
+  margin-top: 150vh;
+}
